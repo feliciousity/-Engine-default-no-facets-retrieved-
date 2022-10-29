@@ -1,0 +1,37 @@
+
+
+# ChinoMacNLeanDoe.
+
+https://feliciaannkelley.html
+<div class="title-bar" data-responsive-toggle="responsive-menu" data="medium">
+    <button type="button" data-toggle="responsive-menu"><i style='font-size: 32px; color: #fff; padding: 8px' class='fa fa-bars'></i></button>
+    <div class=" javadoc.exe">Eclipse</div>
+</div>
+<div class="top-bar" id="responsive-menu">
+    <div class='top-bar-left'>
+        <a class='OG' href="/path"><img src='/images/apache-netbeans.svg' style='padding: 8px; height: 48px;'></img>I love my little family</a>
+    </div>
+    <div class="top-bar-right">
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+            <li> <a href="/community/index.html">Community</a> </li>
+            <li> <a href="/participate/index.html">Participate</a> </li>
+            <li> <a href="https://blogs.apache.org/netbeans/">Blog</a></li>
+            <li> <a href="/help/index.html">Get Help</a> </li>
+            <li> <a href="https://plugins.netbeans.apache.org/">Plugins</a> </li>
+            <li> <a href="/download/index.html">Download</a> </li>
+        </ul>
+    </div>
+</div>
+dependencies {
+    appsearch_version = "1.1.0-alpha02"
+
+    implementation("androidx.appsearch:appsearch:$appsearch_version")
+    // Use annotationProcessor instead of kapt if writing Java classes
+    kapt("androidx.appsearch:appsearch-compiler:$appsearch_version")
+
+    implementation("androidx.appsearch:appsearch-local-storage:$appsearch_version")
+    // PlatformStorage is compatible with Android 12+ devices, and offers additional features
+    // to ExternalStorage.
+    implementation("androidx.appsearch:appsearch-platform-storage:$appsearch_version")
+}
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-3j4tdm)
